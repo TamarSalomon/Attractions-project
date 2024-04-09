@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../packages/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./details.css">
+    <link rel="stylesheet" href="../../packages/ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css">
+    <title>Fun</title>
+    <link rel="shortcut icon" href="../../assets/logo.png" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title"></h1>
+                <div class="row" >
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <div class="white-box text-center"><img class="img-responsive"></div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-6">
+                        <h4 class="box-title mt-5">-על האטרקציה</h4>
+                        <p id="about"></p>
+                        <h2 class="mt-5">
+                            <small class="text-success" id="cost"></small>
+                        </h2>
+                        <button  class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Add to cart">
+                            <a href="../basket/basket.html"><i class="fa fa-shopping-cart"></i></a>
+                        </button>
+                        <button id="openModalBtn" class="btn btn-primary btn-rounded">להזמנה</button>
+                        <ul class="list-unstyled">
+                            <li id="li"></li>
+                               <!-- שינוי -->
+                            <i id="area"></i>
+                            <img src="../../assets/מיקום.gif" width="10%" id="area">
+                            <!-- שינוי -->
+                        </ul>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details"></div>
+    
+     <!-- שינוי -->
+  <div id="myModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img  id="modal_img"src="../../assets/הוספה לסל.gif" alt="Image" width="80%">
+          <label id="modal_text">האטרקציה נוספה לסל שלך</label>
+        </div>
+      </div>
+    </div>
+  </div>
+     <!-- שינוי -->
+    <script src="../../packages/jquery-3.6.4.min.js"></script>
+    <script src="../../packages/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="../../packages/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<script src="../../services/services.js"></script>
+<script src="../details/details.js"></script>
+
+</html>

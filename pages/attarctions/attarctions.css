@@ -1,0 +1,46 @@
+body {
+  direction: rtl;
+  font-family: 'Rubik';
+  font-weight: bolder;
+}
+
+.text_h2 {
+  color: rgb(255, 255, 255);
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card:hover{
+  box-shadow: 0 4px 8px rgb(133, 28, 91);
+}
+.col-lg-4{
+  width: 24% !important;
+}
+#carouselMultiItemExample {
+  padding-top: 7.5rem;
+}
+@media screen and (max-width: 768px)
+{
+.divNav {
+  background-color: rgb(31, 31, 31);
+  width: 200px;
+  height: 335px !important;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 6;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  font-weight: 700;
+  font-family: 'rubik';
+}
+.search_class {
+  width: 80% !important; 
+}
+
+}

@@ -1,0 +1,181 @@
+a:link {
+  text-decoration: none;
+}
+
+#top {
+  position: fixed;
+  z-index: 4;
+  background-color: rgb(232, 210, 5);
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#nav {
+  width: 80%;
+  display: flex;
+}
+
+#nav>div {
+  padding: 3%;
+  align-items: center;
+  display: flex;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search {
+  background-color: rgb(232, 210, 5);
+  border: solid rgb(170, 6, 96) 1px;
+  width: 100%;
+  font-family: 'rubik';
+  font-size: 16px;
+}
+
+.search_class {
+  width: 28%;
+}
+
+.search:focus-visible {
+  outline: none;
+
+}
+
+#nav>#bag {
+  display: flex;
+}
+
+#top>#nav>div>a,
+#top>#nav>#bag>div>a {
+  font-size: 1.5vw;
+  font-weight: bolder;
+  font-family: 'Rubik';
+  color: black;
+}
+
+.fa-shopping-cart {
+  font-size: 28px;
+  color: rgb(170, 6, 96);
+  margin-right: 25px;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#logo {
+  width: 20%;
+  left: 0px;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: center;
+}
+
+#logo>img {
+  margin-left: 15%;
+  width: 70%;
+  display: block;
+}
+
+.fa-search {
+  font-size: 25px;
+  color: rgb(170, 6, 96);
+  margin-left: 5px;
+}
+
+.fa-bars:before {
+  content: none !important;
+}
+
+/* זה מה שעשיתי */
+@media screen and (min-width: 768px) {
+  .divNav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav {
+    display: none;
+  }
+
+  .fa-bars:before {
+    content: "\f0c9" !important;
+    font-size: 50px;
+    color: rgb(170, 6, 96);
+    padding-right: 100%;
+    width: 20%;
+    cursor: pointer;
+  }
+
+  #logo {
+    width: 200px;
+  }
+
+  #top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .divNav {
+    background-color: rgb(31, 31, 31);
+    width: 200px;
+    height: 270px;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 6;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .search {
+    background-color: rgb(31, 31, 31);
+    border: solid rgb(170, 6, 96) 1px;
+    opacity: 0.9;
+    color: aliceblue;
+    width: 100%;
+    font-family: 'rubik';
+    font-size: 16px;
+  }
+
+  .search_class {
+    width: 72%;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
+  }
+
+  .a {
+    color: rgb(170, 6, 96);
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  #bag {
+    display: flex;
+  }
+
+}
